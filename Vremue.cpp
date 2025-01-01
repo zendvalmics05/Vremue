@@ -1,7 +1,12 @@
-﻿#include <iostream>
+﻿#include <cstdio>
+
+#include "vremue.hpp"
 
 int main()
 {
-  std::cout << "Hello Vremue";
+  constexpr auto a = vremue::lcm(21,35);
+  constexpr auto b = -1 * a;
+  printf("%d", b);
+
   return 0;
 }
